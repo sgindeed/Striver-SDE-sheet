@@ -7,7 +7,7 @@ class Solution {
             map.put(i, map.getOrDefault(i, 0)+1);
         }
 
-        for(Entry<Integer, Integer> entry : map.entrySet())
+        for(Map.Entry<Integer, Integer> entry : map.entrySet())
         {
             if(entry.getValue() > nums.length/2)
                 return entry.getKey();
